@@ -400,7 +400,7 @@ def convert_data(source,destination,journey_day,journey_month,journey_weekday,no
        'flight_at_night']]
         
     # Transforming data :
-    #df=scaler.transform(df)
+    df=scaler.transform(df)
 
     return df
 
