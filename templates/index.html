@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fare Prediction project</title>
+    
+    <div class="header">
+        <h1 class="display-4 font-weight-bold">Airline Price Prediction</h1>
+        <h4>by Rohan Takey</h4>
+    
+    </div>
+    <!-- </div> -->
+</head>
+
+<body>
+    <div class="notice">
+        <p><i>*All feilds are required</i></p>
+    </div>
+    <form action="/" method="POST">
+        <div class="card">
+            <h4>Source</h4>
+                <select type="text" name="source" id="source" placeholder="Enter Source">
+                    <option value="Banglore">Banglore</option>
+                    <option value="New_delhi">New Delhi</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+        </div>
+        <div class="card">
+            <h4>Destination</h4>
+                <select type="text" name="destination" id="Destination" placeholder="Enter Destination">
+                    <option value="Banglore">Banglore</option>
+                    <option value="New_delhi">New Delhi</option>
+                    <option value="Cochin">Cochin</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Hydrabad">Hydrabad</option>
+                </select>
+        </div>        
+        <div class="card">
+            <h4>Journey date</h4>
+                <input type="datetime-local" name="journey_date_time" id="Date_Time" placeholder="Journey Date and Time">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="card">
+            <h4>Number of stops</h4>
+                <select type="number" name="stops" id="stops">
+                    <option value="0">Direct Flight</option>
+                    <option value="1">1 stop</option>
+                    <option value="2">2 stops</option>
+                    <option value="3">3 stops </option>
+                    <option value="4">4 stops</option>
+                    <option value="5">5 stops</option>
+                </select>
+        </div>
+        <div class="card">
+            <h4>Select Airline</h4>
+                <select type="text" name="airline" id="airline">
+                    <option value="Air Asia">Air Asia</option>
+                    <option value="Air India">Air India</option>
+                    <option value="GoAir">GoAir</option>
+                    <option value="IndiGo">IndiGo</option>
+                    <option value="Jet Airways">Jet Airways</option>
+                    <option value="Multiple carriers">Multiple carriers</option>
+                    <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+                    <option value="SpiceJet">SpiceJet</option>
+                    <option value="Trujet">Trujet</option>
+                    <option value="Vistara">Vistara</option>
+                </select>
+        </div>
+        <div class="card">
+            <h4>Additional Information</h4>
+                <select type="text" name="add_info" id="add_info" >
+                    <option value="No info">No info</option>
+                    <option value="1 Long layover">1 Long layover flight</option>
+                    <option value="Change airports">Change airports flight</option>
+                    <option value="In-flight meal not included">No flight meal </option>
+                    <option value="No check-in baggage included">No check-in baggage included</option>
+                    <option value="Red-eye flight">Red-eye flight</option>
+                </select>
+        </div>
+        <br>
+        <br>
+        <div class="button">
+            <input type="submit" value="Predict Fare">
+        </div>
+    </form>
+<br>
+<h3>
+{{ out }}
+</h3>
+</body>
+
+<footer class="copyright">
+    <h4>&copy; Rohan Takey</h4>
+</footer>
+</html>
