@@ -1,0 +1,40 @@
+*{
+    margin: 0px 0px 0px 2px;
+    padding: 0px;;
+}
+.header{
+    /* background-color: red; */
+    height: 170px;
+    text-align: center;
+    color: white;
+    background-image: url("https://i.pinimg.com/originals/34/26/96/3426963b3bafd367488e1ceb02bd7739.jpg");
+    background-repeat: no-repeat;
+    background-size: 200;
+    border: rgb(30, 95, 89) double;
+}
+body{
+    margin: 4px;
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg")
+
+}
+.card{
+    width: 300px;
+    border: 2px solid;
+    text-align: center;
+    height: 45px;
+    border-radius: 15px;
+    display: inline-block;
+    /* box-sizing:border-box; */
+    padding: 30px;
+    margin-right: 30px;
+    margin-left: 32px;
+}
+.notice{
+    color: tomato;
+}
+.button{
+    text-align: center;
+    padding: 40px;
+
+}
+
